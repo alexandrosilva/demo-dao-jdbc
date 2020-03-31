@@ -22,7 +22,10 @@ public class Program {
 		Department department = new Department(2, null);
 		List<Seller> list = sellerDao.findByDepartment(department);
 		
-		for (Seller obj : list) {
+		System.out.println("\n=== TEST 3: seller findAll ===");
+		List<Seller> listAll = sellerDao.findAll();
+		
+		for (Seller obj : listAll) {
 			System.out.println(obj);
 		}		
 	}
